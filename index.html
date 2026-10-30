@@ -73,9 +73,10 @@
       <g><rect x="517" y="70" width="218" height="204" rx="7" fill="white" stroke="#cbd1c3"/><circle cx="538" cy="92" r="11" fill="#a7362b"/><text x="538" y="96" text-anchor="middle" font-size="11" fill="white">3</text><text x="558" y="97" font-size="13" font-weight="650" fill="#263226">预览，再发送</text><rect x="536" y="118" width="180" height="91" rx="5" fill="#eeeee5" stroke="#263226" stroke-width="3"/><text x="626" y="160" text-anchor="middle" font-size="21" fill="#a7362b">Hello, InkTag.</text><text x="626" y="187" text-anchor="middle" font-size="11" fill="#263226">留一张照片，或一句话</text><rect x="536" y="226" width="180" height="29" rx="5" fill="#263226"/><text x="626" y="246" text-anchor="middle" font-size="12" fill="white">发送到设备 · 仅显示一次</text></g>
     </svg><figcaption>连接流程示意，窄屏可左右滑动。示例蓝牙名只是占位，操作时请选择自己的设备。</figcaption>
   </figure></div>
-  <ol class="step-list"><li><strong>打开 WebUI，点击「连接」</strong><p>推荐在支持 Web Bluetooth 的 Chrome / Edge 中使用 HTTPS 或本机站点。iPhone / iPad 的常见浏览器通常不能直接使用 Web Bluetooth；也可改用电脑 CLI。</p></li><li><strong>在「设置」核对设备和屏幕</strong><p>连接后会读取设备设置。检查屏幕尺寸、颜色和方向；已有正常配置不必重新填写。更换屏幕时，再按实际屏幕调整。</p></li><li><strong>在「图片」或「创作」中发送</strong><p>导入图片或选择模板，先查看设备效果。默认「仅显示一次」；需要保存时再选择图槽和图片名。传输到 100% 后仍要等待屏幕刷新结束。</p></li></ol>
+  <ol class="step-list"><li><strong>打开 WebUI，点击「连接」</strong><p>iPhone / iPad 推荐 Bluefy；Android 首选 Chrome，也可尝试 Samsung Internet；电脑推荐 Chrome 或 Edge。通过 HTTPS 或本机地址打开网页，允许蓝牙访问，再选择自己的设备。</p></li><li><strong>在「设置」核对设备和屏幕</strong><p>连接后会读取设备设置。检查屏幕尺寸、颜色和方向；已有正常配置不必重新填写。更换屏幕时，再按实际屏幕调整。</p></li><li><strong>在「图片」或「创作」中发送</strong><p>导入图片或选择模板，先查看设备效果。默认「仅显示一次」；需要保存时再选择图槽和图片名。传输到 100% 后仍要等待屏幕刷新结束。</p></li></ol>
+  <h3>选择浏览器</h3><div class="cards browser-guide"><article class="card"><h3>iPhone / iPad</h3><p>推荐 <a href="https://apps.apple.com/app/id1492822055">Bluefy</a>。安装后在 Bluefy 中打开 InkTag 网页，允许蓝牙访问，再点击连接。请直接在 Bluefy 中打开，不要用 Safari 或微信内置窗口连接。</p></article><article class="card"><h3>Android 手机</h3><p>首选 Chrome，也可尝试 Samsung Internet。打开系统蓝牙，允许浏览器的「附近的设备」等权限；页面打不开连接框时，先换用最新版 Chrome。</p></article><article class="card"><h3>Windows / macOS</h3><p>推荐 Chrome 或 Edge。通过 HTTPS 或本机地址打开网页，点击连接并选择自己的设备。连接前，先断开占用同一设备的其他客户端。</p></article></div><p class="small-muted">浏览器支持资料：<a href="https://bluefy.app/guide.html">Bluefy 使用指南</a> · <a href="https://developer.chrome.com/docs/capabilities/bluetooth">Chrome 网页蓝牙</a> · <a href="https://developer.samsung.com/browser/android/overview.html">Samsung Internet 网页蓝牙</a>。微信内置浏览器等窗口通常不能直接连接，请在上述浏览器中重新打开链接。</p>
   <div class="note"><strong>扫码连接不是跳过授权。</strong>设备二维码或 NFC 链接可带入准确蓝牙名；浏览器已授权时会尝试重连，否则需要点击选择设备。启用了设备密码时，仍须正常认证。</div>
-  <div class="section-links"><a href="https://solar2ain.github.io/ink-tag/">在线 WebUI ↗</a><a href="#install">本地使用方式 ↓</a></div>
+  <div class="section-links"><a href="https://solar2ain.github.io/ink-tag/">打开 WebUI ↗</a><a href="#install">使用本地客户端 ↓</a></div>
 </section>
 <section id="images" class="chapter"><div class="chapter-head"><span class="chapter-num">03</span><h2>把照片，变成墨水屏的颜色</h2></div><p class="lede">屏幕只有固定的几种颜料，不能像手机一样混合出任意颜色。图片处理，就是在有限色板和像素之间做选择。</p>
   <div class="palette-row"><div class="palette"><div class="swatches"><i class="swatch" style="background:#242924"></i><i class="swatch" style="background:#eeeee5"></i></div><strong>黑白</strong><p>文字、线稿与高对比照片</p></div><div class="palette"><div class="swatches"><i class="swatch" style="background:#242924"></i><i class="swatch" style="background:#eeeee5"></i><i class="swatch" style="background:#ac382c"></i></div><strong>黑白红</strong><p>红色作为日期、重点信息</p></div><div class="palette"><div class="swatches"><i class="swatch" style="background:#242924"></i><i class="swatch" style="background:#eeeee5"></i><i class="swatch" style="background:#ac382c"></i><i class="swatch" style="background:#d3b737"></i></div><strong>黑白红黄</strong><p>适合信息分组与醒目标记</p></div><div class="palette"><div class="swatches"><i class="swatch" style="background:#242924"></i><i class="swatch" style="background:#eeeee5"></i><i class="swatch" style="background:#ac382c"></i><i class="swatch" style="background:#d3b737"></i><i class="swatch" style="background:#417a52"></i><i class="swatch" style="background:#465ca0"></i></div><strong>六色</strong><p>更丰富的配色，仍非全彩</p></div></div>
@@ -86,6 +87,8 @@
   </div><figcaption>三种处理思路的示意。试着调整参数，选择更适合这张图片的效果。</figcaption></div>
   <div class="two-col"><div><h3>照片：保留轮廓和层次</h3><ul class="small-muted"><li>先裁剪主体，再调整方向和亮度。</li><li>试用抖动算法，并适当降低抖动强度；不是强度越大越好。</li><li>红花、衣服等可保留强调色；避免把所有暗部都变成红色。</li></ul></div><div><h3>文字：清晰比细节更重要</h3><ul class="small-muted"><li>文字和线稿通常不需要抖动。</li><li>采用黑色正文、少量强调色，避免浅灰小字。</li><li>按屏幕实际像素看效果，不要只看放大的编辑画布。</li></ul></div></div>
   <p class="small-muted">预览的浅灰底用于模拟电子纸，不会把整张图片涂成灰色。颜色、对比度和残影会受到屏幕与温度影响，最后再看一眼实际屏幕。</p>
+
+<div class="note"><strong>E6 六色屏注意接线。</strong>设备控制需要 Pro；普通价签主板使用 E6 时，第 16 脚需用绝缘胶带贴住并保持悬空，否则可能发热且非常耗电。更换屏幕或调整接线前先断电。离线图片转换和预览不受 Pro 限制。</div>
 </section>
 <section id="canvas" class="chapter"><div class="chapter-head"><span class="chapter-num">04</span><h2>在画板里，安排每一块信息</h2></div><p class="lede">先选尺寸和用途，再放置控件。小屏更适合少量大字，信息不是越多越好。</p>
   <div class="table-wrap"><table><thead><tr><th>页面类型</th><th>谁来渲染和更新</th><th>字体与联网</th></tr></thead><tbody><tr><td><strong>静态页面</strong></td><td>客户端生成一张图片，发送后保留</td><td>可用浏览器字体；设备不需要安装同款字库</td></tr><tr><td><strong>设备动态页面</strong></td><td>设备原生页面，例如日历、时钟</td><td>使用设备已有字体和能力；自定义设备动态布局尚未开放</td></tr><tr><td><strong>主机动态页面</strong></td><td>电脑获取数据、渲染和定时推送</td><td>电脑需开机；天气取数需网络，推送需蓝牙</td></tr></tbody></table></div>
@@ -102,14 +105,14 @@
   <div class="visual"><figure><svg class="device" viewBox="0 0 620 346" role="img" aria-labelledby="date-title date-desc"><title id="date-title">日期牌排版示意</title><desc id="date-desc">左侧红色大字20，右侧显示星期、农历、当前天气和未来预报，利用黑红信息层级便于阅读。</desc><rect x="1" y="1" width="618" height="344" rx="18" fill="#28312b"/><rect x="14" y="14" width="592" height="318" rx="5" fill="#eeeee5"/><g fill="#273329"><text x="33" y="45" font-size="14" fill="#a7362b">2026年10月</text><text x="584" y="45" font-size="12" text-anchor="end">星期二</text><path d="M32 58H588" stroke="#7f8978"/><path d="M284 81v218" stroke="#a0a895" stroke-dasharray="2 4"/><text x="152" y="245" text-anchor="middle" font-size="183" font-weight="600" fill="#a7362b" letter-spacing="-9">20</text><text x="152" y="291" text-anchor="middle" font-size="16">农历九月 · 秋日</text><text x="310" y="100" font-size="21" font-weight="600">秋日晴好</text><text x="310" y="126" font-size="12" fill="#68755e">杭州 · 西湖</text><use href="#weather-sun" x="305" y="145" width="62" height="62"/><text x="380" y="199" font-size="54">22°</text><text x="311" y="232" font-size="13">体感 23°　湿度 56%　东北风</text><path d="M310 250H580" stroke="#9ba68f"/><g font-size="12"><text x="310" y="278">明天　多云</text><text x="580" y="278" text-anchor="end">18° — 24°</text><text x="310" y="304">后天　晴</text><text x="580" y="304" text-anchor="end">17° — 25°</text></g></g></svg><figcaption>日期牌示意。天气站和日期牌由可编辑控件组成，可按屏幕尺寸调整。</figcaption></figure></div>
   <ol class="step-list"><li><strong>在「创作」选择天气站或日期牌</strong><p>选择合适的分辨率，移动控件、调整配色。小屏优先保留日期、天气与大字温度，不要堆入整套大屏信息。</p></li><li><strong>设置地点、经纬度和时区</strong><p>在天气数据源区域获取实际天气预览，核对日期和数值。演示数据只用于排版，不能当作最新天气自动推送。</p></li><li><strong>导出主机任务，交给 CLI</strong><p>导出 <code>*.inktag.json</code> 原稿，导入为 TOML 配置，绑定准确蓝牙地址和设备身份，再显式开启任务。自动推送需要 Pro 和兼容设备。</p></li></ol>
   <details class="advanced"><summary>用命令行设置定时更新（进阶）</summary>
-  <pre><code><span class="terminal-title">离线排版检查 · 不连接设备</span>inktag host import weather.inktag.json --config weather.toml
-inktag host validate weather.toml
-inktag host render --scene weather.inktag.json --demo -o preview.png
+  <pre><code><span class="terminal-title">离线排版检查 · 不连接设备</span>inktag-cli host import weather.inktag.json --config weather.toml
+inktag-cli host validate weather.toml
+inktag-cli host render --scene weather.inktag.json --demo -o preview.png
 
-<span class="terminal-title">获取实际天气并检查图片</span>inktag host fetch weather.toml --output forecast.json
-inktag host render --scene weather.inktag.json --snapshot forecast.json -o weather.png</code></pre>
-  <div class="two-col"><div><h3>绑定一次，再定时运行</h3><p class="small-muted"><code>inktag --device 准确蓝牙名 host target</code> 读取目标。将返回的 <code>address</code> 和 <code>expected_device_id</code> 填入任务，并设 <code>enabled = true</code>。名称仅便于辨认，运行时按地址和身份核验。更换电脑时，请重新读取并绑定设备。</p></div><div><h3>先不推送，再尝试一次</h3><p class="small-muted"><code>inktag host run weather.toml --once</code> 只生成图片；确认正确后加 <code>--send</code> 推送。去掉 <code>--once</code> 持续运行。先尝试一次推送，确认屏幕显示正确，再持续运行。</p></div></div>
-  <div class="note neutral">可由 Windows 任务计划程序或用户级定时任务执行 <code>inktag host run /配置绝对路径/weather.toml --once --send</code>。不要同时启动多个相同任务。停止电脑任务或设置 <code>enabled = false</code> 才会停止后续推送；设备上的停止按钮不会关闭电脑任务。</div>
+<span class="terminal-title">获取实际天气并检查图片</span>inktag-cli host fetch weather.toml --output forecast.json
+inktag-cli host render --scene weather.inktag.json --snapshot forecast.json -o weather.png</code></pre>
+  <div class="two-col"><div><h3>绑定一次，再定时运行</h3><p class="small-muted"><code>inktag-cli host -n 准确蓝牙名 target</code> 读取目标。将返回的 <code>address</code> 和 <code>expected_device_id</code> 填入任务，并设 <code>enabled = true</code>。名称仅便于辨认，运行时按地址和身份核验。更换电脑时，请重新读取并绑定设备。</p></div><div><h3>先不推送，再尝试一次</h3><p class="small-muted"><code>inktag-cli host run weather.toml --once</code> 只生成图片；确认正确后加 <code>--send</code> 推送。去掉 <code>--once</code> 持续运行。先尝试一次推送，确认屏幕显示正确，再持续运行。</p></div></div>
+  <div class="note neutral">可由 Windows 任务计划程序或用户级定时任务执行 <code>inktag-cli host run /配置绝对路径/weather.toml --once --send</code>。不要同时启动多个相同任务。停止电脑任务或设置 <code>enabled = false</code> 才会停止后续推送；设备上的停止按钮不会关闭电脑任务。</div>
   <p class="small-muted">天气数据来自 Open-Meteo，请遵守其使用条款。无法取到新数据时会提示失败，不会用演示数据替代。中文显示不全时，可在任务中选择本机已安装的中文字体。</p>
   </details>
 </section>
@@ -120,12 +123,12 @@ inktag host render --scene weather.inktag.json --snapshot forecast.json -o weath
   <div class="table-wrap"><table><thead><tr><th>操作</th><th>作用范围</th></tr></thead><tbody><tr><td>重启设备</td><td>重新启动运行中的固件，不等于恢复设置</td></tr><tr><td>重置设置</td><td>恢复普通设置并清除设备密码 / 管理二维码；保留设备图片、Pro 与 Find</td></tr><tr><td>清除用户数据</td><td>删除设备图片及其名称引用；保留设置、密码、Pro 与 Find</td></tr></tbody></table></div>
   <div class="note"><strong>完整烧录是另一条流程。</strong>它需要使用烧录工具，可能清除设备内容，不能当作普通重启或日常更新。操作前请阅读工具中的清理提示，并备份需要保留的内容。</div>
 </section>
-<section id="pro" class="chapter"><div class="chapter-head"><span class="chapter-num">08</span><h2>先用基础功能，再按需激活</h2></div><p class="lede">Free 保留普通显示、维护与更新。Pro 增加进阶功能，但不能让不存在的硬件获得能力。</p>
-<div class="table-wrap"><table><thead><tr><th>用户功能</th><th class="center">Free</th><th class="center">Pro</th></tr></thead><tbody><tr><td>图片、日历、时钟、二维码、设备信息</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>图片存储与轮播</td><td class="center">10 / 4 张配额¹</td><td class="center">以总空间为限</td></tr><tr><td>屏幕与已支持的引脚配置</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>画板、图片处理、主机天气本地预览</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>灯效；已适配的按键 / 蜂鸣器</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>被动 NFC 链接、维护与更新</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>隐藏或调整 InkTag 标识</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>防丢器（Find · 实验功能）</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>NFC 切换页面</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>改广播名、设置密码等更多功能</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>主机动态天气自动推送</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>NFC 传图、自定义设备动态布局</td><td class="center no">—</td><td class="center future">后续待支持</td></tr></tbody></table></div>
-  <p class="small-muted">¹ 可视区长边小于 300 像素最多 10 张，其余最多 4 张，实际容量可能更少。按键 / 蜂鸣器暂未支持的项目会在界面标明；NFC、Find 等功能需要设备本身支持。</p>
+<section id="pro" class="chapter"><div class="chapter-head"><span class="chapter-num">08</span><h2>先用基础功能，再按需激活</h2></div><p class="lede">InkTag 免费版已能满足大部分日常使用需求。Pro 提供更多高级和实验功能，适合喜欢折腾、愿意探索的用户；具体能力取决于设备。</p>
+<div class="table-wrap"><table><thead><tr><th>用户功能</th><th class="center">Free</th><th class="center">Pro</th></tr></thead><tbody><tr><td>图片、日历、时钟、二维码、设备信息</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>图片存储与轮播</td><td class="center">10 / 4 张配额¹</td><td class="center">以总空间为限</td></tr><tr><td>屏幕与已支持的引脚配置</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>画板、图片处理、主机天气本地预览</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>灯效；已适配的按键 / 蜂鸣器</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>被动 NFC 链接、维护与更新</td><td class="center yes">✓</td><td class="center yes">✓</td></tr><tr><td>主机动态天气自动推送</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>隐藏或调整 InkTag 标识</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>防丢器（Find · 实验功能）</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>NFC 手机命令（设备支持时）</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>高级屏幕控制：部分屏幕局刷、E6 六色屏控制</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>改广播名、设置密码等更多功能</td><td class="center no">—</td><td class="center yes">✓</td></tr><tr><td>NFC 传图、自定义设备动态布局</td><td class="center no">—</td><td class="center future">后续待支持</td></tr></tbody></table></div>
+  <p class="small-muted">¹ 可视区长边小于 300 像素最多 10 张，其余最多 4 张，实际容量可能更少。nRF52811 与 DA14585 只提供 Free，无法激活 Pro；这两个主控不限制图槽数量，只受实际存储容量限制。按键 / 蜂鸣器暂未支持的项目会在界面标明；NFC、Find 等功能需要设备本身支持。</p>
   <p class="small-muted">激活在「设置 → 激活」中完成，激活码与设备绑定。获取方式见项目说明。请保存好自己的激活码，不要贴在公开截图或反馈中。</p>
   <p class="small-muted">防丢器目前为实验功能，需要 Pro 和设备支持。具体原理与用法见 <a href="#find">Find 随身防丢</a>。</p>
-</section>
+<div class="note"><strong>使用与捐赠提醒</strong><p>InkTag 固件免费使用，项目未提供购买链接。若从商家购买设备或服务后遇到问题，请联系购买渠道的商家。捐赠支持项目后可获得 Pro 激活码；大部分 Pro 功能属于实验功能，无法保证稳定性，请谨慎开通。</p></div></section>
 <section id="find" class="chapter"><div class="chapter-head"><span class="chapter-num">09</span><h2>Find：给随身物品，多一条找回线索</h2></div>
   <span class="label pro">实验功能 · 需 Pro 与设备支持</span>
   <p class="lede">小尺寸电子价签轻巧，装好保护外壳后，比较适合作为随身防丢的小标签，放进自己的背包、行李等物品中。万一遗落，可以尝试查询最近的位置报告，帮助缩小寻找范围。</p>
@@ -141,28 +144,28 @@ inktag host render --scene weather.inktag.json --snapshot forecast.json -o weath
   <div class="two-col"><div><h3>没有新位置，不一定是坏了</h3><p class="small-muted">附近没有可用的 Apple 设备、信号被遮挡、标签没电，或报告尚未上传，都可能暂时没有结果。位置会有误差和延迟，地图上的旧点不等于物品此刻的位置。</p></div><div><h3>适合辅助寻找，不承诺实时提醒</h3><p class="small-muted">它可以为遗落物品提供线索，但不等于离身就报警，也不承诺 AirTag 的精确查找、响铃等功能。只用于自己或已获明确同意的物品，不用于未经同意的人员跟踪，也不替代紧急求助设备。</p></div></div>
   <h3 style="margin-top:28px">账号与身份资料，请自己保管</h3>
   <div class="privacy-grid"><article class="card"><h3>账号与本机数据</h3><p>建议使用专门注册的 Apple 账号，不用个人常用账号。账号密码和验证码只在本机界面输入。按本地服务的安装向导准备好所需组件，再登录使用。</p></article><article class="card"><h3>备份与隐私</h3><p>保管好本地身份库、恢复资料及会话数据。它们不在屏幕上，也不应进入公开仓库。遇到登录失败先记录阶段和错误码，不要通过清空身份库来尝试修复。</p></article></div>
-</section>
-<section id="install" class="chapter"><div class="chapter-head"><span class="chapter-num">10</span><h2>选择适合你的使用方式</h2></div><p class="lede">只是发张图片，先用 WebUI。需要本地 Find、长期运行或自动化，再安装本地服务或 CLI。</p>
-  <div class="table-wrap"><table><thead><tr><th>方式</th><th>适合</th><th>准备</th></tr></thead><tbody><tr><td><strong>在线 WebUI</strong></td><td>直接编辑、连接、传图</td><td>支持网页蓝牙的 Chrome / Edge 等浏览器</td></tr><tr><td><strong>独立 HTML / 静态包</strong></td><td>本地使用或自行托管</td><td>不需要 Node.js；蓝牙仍受浏览器安全上下文限制；不自带 Find 服务</td></tr><tr><td><strong>本地服务包</strong></td><td>固定本机地址、持久数据与 Find</td><td>Python 3.11+；Find 另需认证运行依赖</td></tr><tr><td><strong>Python CLI</strong></td><td>终端操作、主机任务与脚本</td><td>Python 3.11+、系统蓝牙与相应权限</td></tr></tbody></table></div>
-  <div class="two-col"><div><h3>本地服务：先安装，再打开</h3><p class="small-muted">解压本地服务包进入目录。Windows 双击 <code>install.cmd</code>，macOS 运行 <code>install.command</code>，Linux 运行 <code>sh install.sh</code>。按照窗口提示完成依赖安装并访问本机地址。</p><pre><code>http://127.0.0.1:8787/</code></pre><p class="small-muted">首次安装 Find 时，请按向导完成组件准备。普通传图不需要登录 Apple。</p></div><div><h3>CLI：不需要开发环境</h3><p class="small-muted">解压 CLI 包，进入 <code>inktag-cli</code> 目录。可使用包内安装入口，或在自己的 Python 虚拟环境执行：</p><pre><code>python -m pip install .
-inktag --help
-inktag device scan
-inktag --device IKT_TL_1234 device info</code></pre><p class="small-muted">示例设备名请替换为扫描得到的准确名称。连接同一台设备时，先断开 WebUI，避免多个客户端同时抢占。</p></div></div>
-  <h3 style="margin-top:28px">手机访问电脑上的服务</h3><p class="small-muted">在本地服务包目录运行 <code>python start.py --lan</code>。按终端显示的局域网 HTTPS 地址访问，使用用户名 <code>inktag</code> 与本次访问密码登录。手机需连接同一局域网，并信任你自己电脑生成的证书；普通局域网 HTTP 不满足蓝牙要求。即便 HTTPS 正常，手机浏览器本身也必须支持 Web Bluetooth。</p>
-  <div class="note neutral">保持数据目录固定。Windows 默认位于当前用户的 <code>%LOCALAPPDATA%/InkTag</code>。不要随意删除、放入公开下载目录或同步到公共仓库；不要把带有 Find 数据的本地服务直接暴露到互联网。</div>
-  <h3>几条常用 CLI 命令</h3><pre><code><span class="terminal-title">已安装 CLI 后使用；设备名为示例</span>inktag --device IKT_TL_1234 screen show
-inktag --device IKT_TL_1234 display calendar
-inktag --device IKT_TL_1234 image upload photo.jpg --preview preview.png
-inktag --device IKT_TL_1234 image upload photo.jpg --slot next --name landscape
-inktag --device IKT_TL_1234 slot list
-inktag --device IKT_TL_1234 slideshow start --interval 5m
-inktag --device IKT_TL_1234 slideshow stop</code></pre>
-  <p class="small-muted">不带 <code>--slot</code> 的图片上传直接显示；保存与替换需明确选择。命令和参数以安装版本的 <code>--help</code> 为准。走时观察可用 <code>--no-time-sync</code> 避免默认连接校时，日常操作通常不需要。</p>
-</section>
+<h3>换电脑、备份标签与轨迹</h3><p class="small-muted">Find 广播右侧的「导出」用于当前设备；本地版「已登记标签」旁的「导出标签」可在弹窗内选择多个设备，分别选择设备信息与历史轨迹。单设备导出提供可复制字符串，批量导出生成文件；「导入标签」同时接受这两种方式。</p><div class="note neutral">默认使用口令加密，至少 6 个字符，也可自动生成口令；请把口令与备份分开保存。取消加密需确认隐私风险：查询私钥可用于查询设备位置，轨迹可暴露历史位置。仅导出轨迹不包含查询私钥，导入后不能查询新位置。</div><p class="small-muted">同一设备的多个身份合并展示轨迹。历史身份默认暂停记录，可单独开启；「开启全部」用于各设备当前身份，「暂停全部」保留已有轨迹。查询和定期记录需要电脑上的本地服务与有效 Apple 会话持续可用。</p></section>
+<section id="install" class="chapter"><div class="chapter-head"><span class="chapter-num">10</span><h2>使用本地客户端</h2></div><p class="lede">在线版适合直接连接和传图。需要 Find 查询、保存本机资料或运行自动化任务时，使用包含本地 WebUI 的 CLI 包。</p>
+<div class="table-wrap"><table><thead><tr><th>方式</th><th>使用方法</th><th>适合</th></tr></thead><tbody><tr><td>在线 WebUI</td><td>用推荐浏览器打开网站</td><td>无需安装，直接连接和传图</td></tr><tr><td>standalone ZIP</td><td>完整解压，打开 InkTag-WebUI.html，保留 assets 文件夹</td><td>离线保存网页；不含 Find 查询后台</td></tr><tr><td>静态 ZIP</td><td>解压并用 HTTP / HTTPS 提供网页</td><td>自行托管；不含查询后台</td></tr><tr><td>CLI ZIP（含本地 WebUI）</td><td>解压后安装 CLI，或运行包内 start.py</td><td>本机数据、Find 查询和自动化</td></tr></tbody></table></div>
+<div class="note neutral">standalone 的 HTML、字体和图片资源已在同一个 ZIP 中，不需要另下资源包。本地服务已整合进 CLI ZIP，也不需要重复下载。以 <a href="https://github.com/solar2ain/ink-tag/releases">Releases 实际附件</a>为准，尚未列出的文件暂不可下载。</div>
+<div class="two-col"><div><h3>1. 解压并安装</h3><p class="small-muted">准备 Python 3.11 或以上，解压 CLI ZIP，进入其中包含 pyproject.toml 的 cli 目录：</p><pre><code>python -m pip install .
+inktag-cli -h</code></pre><p class="small-muted">包内 install.cmd（Windows）、install.command（macOS）和 install.sh（Linux）可引导准备 Find 所需依赖。普通传图不需要登录 Apple。</p></div><div><h3>2. 回到解压根目录启动</h3><p class="small-muted">回到同时包含 cli 和 webui 文件夹的根目录，运行：</p><pre><code>inktag-cli webui start --repo .
+inktag-cli webui status</code></pre><p class="small-muted">启动后会打开浏览器。也可运行 <code>python start.py</code>；Find 首次使用按提示准备认证组件。HTTPS 可加 <code>--enable-tls</code>。</p></div></div>
+<h3>手机访问电脑上的服务</h3><p class="small-muted">在解压根目录运行 <code>python start.py --lan</code>。手机与电脑连接同一局域网，按终端提供的 HTTPS 地址与访问密码打开页面，并信任自己电脑生成的证书。iPhone / iPad 用 Bluefy，Android 首选 Chrome、可尝试 Samsung Internet。</p>
+<div class="note neutral">Windows 默认数据目录是当前用户的 <code>%LOCALAPPDATA%/InkTag</code>。更新客户端时保留原数据目录；不要为了修复登录错误而删除身份库，也不要把含 Find 数据的服务暴露到互联网。</div>
+<h3>常用 CLI 命令</h3><pre><code>inktag-cli device scan
+inktag-cli device -n IKT_TL_1234 info
+inktag-cli device -n IKT_TL_1234 setting screen show
+inktag-cli display -n IKT_TL_1234 calendar
+inktag-cli image -n IKT_TL_1234 upload photo.jpg --slot next --name landscape
+inktag-cli device -n IKT_TL_1234 slot list
+inktag-cli device -n IKT_TL_1234 display slideshow start --interval 5m
+inktag-cli device -n IKT_TL_1234 display slideshow stop</code></pre><p class="small-muted">替换示例蓝牙名与图片路径。每层命令都可用 <code>-h</code> 查看帮助；选择设备的名称或地址参数放在 device、image、display 等入口之后，扫描默认最多 30 秒。</p>
+<div class="section-links"><a href="https://github.com/solar2ain/ink-tag/blob/main/docs/zh-CN/webui.md">本地 WebUI 完整说明 ↗</a><a href="https://github.com/solar2ain/ink-tag/blob/main/docs/zh-CN/cli.md">CLI 手册 ↗</a></div></section>
 <section id="faq" class="chapter"><div class="chapter-head"><span class="chapter-num">11</span><h2>卡住时，先看这里</h2></div><p class="lede">先检查供电、浏览器、准确目标和当前操作，再考虑修改配置。</p>
   <div class="faq">
     <details><summary>蓝牙选择框里没有设备？</summary><p>确认设备运行兼容 InkTag 固件、供电正常且在附近；系统蓝牙和浏览器蓝牙权限已开启。先断开其他客户端。以实际蓝牙名选择，Recovery 名称通常带 <code>_OTA</code>，不是普通应用。原厂固件不一定能由 InkTag WebUI 管理。</p></details>
-    <details><summary>手机能打开网页，为什么不能连接蓝牙？</summary><p>网页能显示不代表浏览器有 Web Bluetooth。使用支持该功能的浏览器，并从可信 HTTPS 或本机地址打开。普通局域网 HTTP 和未受信任的证书可能导致蓝牙不可用。iOS 的常见浏览器通常不提供该能力，可改用支持的电脑浏览器或 CLI。</p></details>
+    <details><summary>手机能打开网页，为什么不能连接蓝牙？</summary><p>网页能显示不代表浏览器有 Web Bluetooth。使用支持该功能的浏览器，并从可信 HTTPS 或本机地址打开。普通局域网 HTTP 和未受信任的证书可能导致蓝牙不可用。iPhone / iPad 请在 Bluefy 中打开；Android 首选 Chrome，也可尝试 Samsung Internet。不要通过微信等内置窗口连接。</p></details>
     <details><summary>进度已经 100%，为什么屏幕还没动完？</summary><p>100% 通常只是图片字节传完，面板还在执行刷新波形。等待最终完成提示，期间保持供电。刷新时间受屏幕、温度和颜色影响。失败时记录错误信息，不要连续重复点击或凭一次超时判断硬件损坏。</p></details>
     <details><summary>画面反了、被裁切、颜色不对怎么办？</summary><p>先核对设备实际屏幕预设、方向、颜色与已确认接线，再查看发送预览。普通画板会自动对齐横竖方向后居中裁切 / 补白，尺寸差较大时边缘内容仍可能丢失。不要通过乱改电平或尝试陌生驱动来解决排版问题。</p></details>
     <details><summary>屏幕断电还能保图，为什么时钟不走了？</summary><p>墨水屏保留的是最后一帧。计时、蓝牙和刷新都需要主控供电。更换电池或掉电后重新连接校时。保图不是整机断电后仍在运行。</p></details>
@@ -176,6 +179,6 @@ inktag --device IKT_TL_1234 slideshow stop</code></pre>
 </section>
 </div></div>
 </main>
-<footer class="footer"><div class="wrap"><div><div class="footer-brand">InkTag</div><p>让旧价签，成为新的日常。<br>一张照片，一句提醒，一块安静的小屏幕。</p></div><div class="footer-right"><a href="https://solar2ain.github.io/ink-tag-manual/">InkTag 使用手册 ↗</a><p>适用客户端：WebUI 1.2.0 / CLI 0.2.0<br>整理于 2026-10-20 · 实际功能以设备和发布说明为准</p></div></div></footer>
+<footer class="footer"><div class="wrap"><div><div class="footer-brand">InkTag</div><p>让旧价签，成为新的日常。<br>一张照片，一句提醒，一块安静的小屏幕。</p></div><div class="footer-right"><a href="https://solar2ain.github.io/ink-tag-manual/">InkTag 使用手册 ↗</a><p>适用客户端：WebUI 1.2.0 / CLI 0.2.0<br>更新于 2026-10-30 · 实际功能以设备和发布说明为准</p></div></div></footer>
 </body>
 </html>
